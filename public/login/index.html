@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!--firebase auth-->
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDHhmbcCxQ1sD2pFbuxlDamqx6K6dqLjHE",
+            authDomain: "my-app-4372f.firebaseapp.com",
+            databaseURL: "https://my-app-4372f.firebaseio.com",
+            projectId: "my-app-4372f",
+            storageBucket: "",
+            messagingSenderId: "925366573478"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <style>
+        .row {
+            margin-top: 120px;
+            /* width: 100%; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <h5 class="navbar-brand">Dua App</h5>
+
+    </nav>
+
+
+
+    <div class="container" style="margin-top:20px">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 "> </div>
+            <div class="col-lg-4 col-sm-12">
+
+                <div class="jumbotron">
+
+                    <div class=" text-center">
+                        <h2>Sign In</h2>
+                    </div>
+                    <form action="" id="stop">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <a href="../index.html">Don't Have Account!</a>
+                        <button type="submit" class="btn btn-primary float-right">Sign In</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-12 "> </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="login.js"></script>
+
+</html>
