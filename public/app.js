@@ -18,8 +18,8 @@ function submit() {
         age: age.value,
         contact: contact.value
     }
-
-    console.log(user);
+    if(user.firstName !="" && user.lastName !=""&&user.contact !=""&&user.email !=""&& user.password !=""&& user.age !="")
+    {console.log(user);
 
     firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
         .then(function(res) {
@@ -39,4 +39,8 @@ function submit() {
             }
             console.log(error);
         });
+    }
+    else{
+        alert("Enter Valid Datas")
+    }
 }
